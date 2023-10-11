@@ -25,15 +25,11 @@ header {
 
 img {
     display: block;
-    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     border-radius: 20px;
-	}
-
-aside{
-        display: flex;
-        justify-content: center;
-}
-
+  }
 
 section{
     background-color: rgba(246, 172, 76, 0.377);
@@ -175,9 +171,11 @@ a{
     }
 
     img {   
-        max-height: 400px;
-        
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
     }
+    
 
     header {
         padding: 40px;
