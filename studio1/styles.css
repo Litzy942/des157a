@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(images/background.jpg);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#kiki{
+    position: relative;
+    bottom:-4px;
+    right:12px;
+    height: 357px;
+}
+
+header{
+    text-align: center;
+    padding: 5px;
+}
+
+h1{
+    margin: auto;
+    color: rgb(229, 41, 41);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+}
+
+/******************************General Body*************************************/
+ .main{
+    background-color: rgba(245, 245, 245, 0.439);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+ }
+
+ .insert{
+    margin: 10px;
+ }
+ input{
+     border-radius: 10px;
+ }
+
+ input[type="text"]:focus {
+    border:4px solid #f64d5b;
+    outline: 0;
+    box-shadow: 0px 0px 10px 0px rgb(253, 91, 91);
+}
+
+ label{
+    font-family: 'Bebas Neue', sans-serif;
+ }
+
+ @keyframes swing {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+  }
+
+  #kiki {
+    animation: swing 6s infinite ease-in-out;
+  }
+
+@media only screen and (min-width: 400px) {
+    body {
+        background-image: url(images/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #kiki{
+        position: relative;
+        bottom: 305px;
+        right: 46px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .main{
+        background-color: rgba(245, 245, 245, 0.439);
+        border-radius: 20px;
+        margin: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 20px;
+        text-align: center;
+     }
+
+   .main {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+        
+     }
+
+    /*  main{
+        margin: auto;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    form {
+        grid-column: 2/2;
+    }
+
+     header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    header{
+        text-align: center;
+        padding: 5px;
+    }
+
+    h1{
+        grid-column: 1/1;
+        text-align: center;
+    }
+     */
+}
